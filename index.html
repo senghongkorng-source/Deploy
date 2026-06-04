@@ -1,182 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
-
-    <title>Online Store</title>
+<title>Online Store</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">Online Store</a>
 
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#Home">
-            <i class="bi bi-bootstrap-fill text-primary"></i>
-            <span class="class Store">Online Store</span>
-        </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div id="mainNav" class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a href="#Home" class="nav-link">
-                        <i class="bi bi-house-door"></i> Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#About" class="nav-link">
-                        <i class="bi bi-person"></i> About
-                    </a>
-
-                <li class="nav-item">
-                    <a href="#Shop" class="nav-link">
-                        <i class="bi bi-bag"></i> Shop
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#Contact" class="nav-link">
-                        <i class="bi bi-envelope"></i> Contact
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#Shop" class="nav-link">Shop</a></li>
+        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
+
 <section id="Home" class="home">
-    <div class="home-content">
-        <h2>Welcome to</h2>
-        <h1>Online Store</h1>
-
-        <p>
-            Find the best products at the best prices.<br>
-            Shop now and enjoy great deals!
-        </p>
-
-        <div class="btn-group">
-            <a href="#Shop" class="btn btn-primary">SHOP NOW</a>
-        </div>
-    </div>
+  <div class="home-content">
+    <h2>Welcome to</h2>
+    <h1>Online Store</h1>
+    <p>Find the best products at the best prices.</p>
+    <a href="#Shop" class="btn btn-primary">Shop Now</a>
+  </div>
 </section>
-<section id="About" class="about">
-    <div class="about-header">
-        <h4>ABOUT ME</h4>
-        <h1> Web Developer</h1>
-        <p>
-            Our online store is designed to provide customers with high-quality products at affordable prices. 
-            We focus on providing good service, secure payments, and fast shipping to ensure the best shopping experience.
- 
-        </p>    
+
+<section id="About" class="about text-center">
+  <div class="container">
+    <h2>About Us</h2>
+    <a href="#" class="btn">We provide high-quality products at affordable prices with fast delivery and secure payment.
+      Our online store is designed to provide customers with high-quality products at affordable prices. 
+      We focus on providing good service, secure payments, and fast shipping to ensure the best shopping experience. 
+    </a>
+  </div>
+</section>
+
 <section id="Shop" class="shop">
-    <h2>WellCome to our Shop</h2>
+  <div class="container">
+    <h2>WelCome to Shop</h2>
 
-    <div class="product-container">
+    <div class="row g-4">
 
+      <!-- PRODUCT -->
+      <div class="col-md-3">
         <div class="product-card">
-            <img src="download (5).jpg" alt="Nike Phantom 6">
-            <h3>Nike Phantom 6</h3>
-            <p>$89.99</p>
-            <button>Buy Now</button>
+          <img src="download (5).jpg">
+          <h3>Nike Phantom</h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
         </div>
-       <div>
-        <div class="product-card">
-            <img src="download (6).jpg" alt="Adidas">
-            <h3>Adidas </h3>
-            <p>$93.99</p>
-            <button>Buy Now</button>
-        </div>
-       </div>
-       <div class="product-card">
-            <img src="download (7).jpg" alt="Cambodia (Home)">
-            <h3>Cambodia (Home) </h3>
-            <p>$45</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="product-card">
-            <img src="download (8).jpg" alt="Cambodia (Away)">
-            <h3>Cambodia (Away) </h3>
-            <p>$45</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="product-card">
-            <img src="download (10).jpg" alt="Boeung Ket Angkor FC">
-            <h3>Boeung Ket Angkor FC </h3>
-            <p>$39.99</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="product-card">
-            <img src="download (11).jpg" alt="Cambodia (Blue)">
-            <h3>Cambodia (Blue) </h3>
-            <p>$45</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="product-card">
-            <img src="download (12).jpg" alt="Preah Khan Reach Svay Rieng Fc (Red)">
-            <h3>Preah Khan Reach Svay Rieng Fc (Red) </h3>
-            <p>$34.99</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="product-card">
-            <img src="download (13).jpg" alt="Visakha">
-            <h3>Visakha </h3>
-            <p>$34.99</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="product-card">
-            <img src="images (9).jpg" alt="Cambodia (Red)">
-            <h3>Cambodia (Red) </h3>
-            <p>$45</p>
-            <button>Buy Now</button>
-        </div>
-         <div class="product-card">
-            <img src="images (12).jpg" alt="Preah Khan Reach Svay Rieng Fc">
-            <h3>Preah Khan Reach Svay Rieng Fc</h3>
-            <p>$34.99</p>
-            <button>Buy Now</button>
-        </div>
+      </div>
 
-
-
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="download (6).jpg">
+          <h3>Adidas</h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="download (7).jpg">
+          <h3>Cambodia (Home)</h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="download (8).jpg">
+          <h3>Cambodia (Away)</h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="download (10).jpg">
+          <h3>Boeung Ket Angkor FC </h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="download (11).jpg">
+          <h3>Cambodia (Blue) </h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="download (12).jpg">
+          <h3>Preah Khan Reach Svay Rieng Fc (Red) </h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="images (9).jpg">
+          <h3>Cambodia (Red) </h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-card">
+          <img src="images (12).jpg">
+          <h3>Preah Khan Reach Svay Rieng Fc</h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="product-card">
+          <img src="download (13).jpg">
+          <h3>Visakha Fc</h3>
+          <p>$49.99</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+      
     </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="Contact" class="contact">
-    <div class="contact-container">
-
+  <div class="container text-center">
+    
         <h4>CONTACT</h4>
-        <h1>Let's Contact me <span>Bro</span></h1>
+        <h1>Let's Contact me <span></span></h1>
 
-        <p>
+        <a href="#" class="btn">
            If you have any questions or need help, please contact our store via phone number, email, or social media below. 
-           We are always happy to help you.
-        </p>
+           We are always happy to help you."
+        </a>
 
         <div class="contact-buttons">
             <a href="mailto:senghongkorng@gmail.com" class="btn email">
-                Email Me
+                Email 
             </a>
 
             <a href="#" class="btn">GitHub</a>
-            <a href="#" class="btn">LinkedIn</a>
-            <a href="#" class="btn">Resume</a>
+            <a href="#" class="btn">Telegram</a>
+            <a href="#" class="btn">Instagram</a>
         </div>
 
         <div class="contact-info">
@@ -189,16 +176,9 @@
             <div class="info-box">
                 <h3>Location</h3>
                 <p>Phnom Penh, Cambodia</p>
-            </div>
-
-        </div>
-
-    </div>
+  </div>
 </section>
 
-</section>
-
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
